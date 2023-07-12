@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo Craft</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--fav-icon------------------------------------->
+    <link rel="shortcut icon" href="images/fav-icon.svg"/>
+    <!--poppins-font-family-------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="home.html" class="logo"></i> akaaIndonesia </a>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+</header>
+
+<!-- header section ends  -->
+
+<!-- closer btn  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<!-- navbar  -->
+
+<nav class="navbar">
+    <a href="home.html">home</a>
+    <a href="shop.html">shop</a>
+    <a href="about.html">about</a>
+    <a href="team.html">team</a>
+    <a href="blog.html">blog</a>
+    <a href="contact.html">contact</a>
+</nav>
+
+<!-- shopping cart  -->
+
+<div class="shopping-cart">
+
+</div>
+
+<!-- login form  -->
+
+<div class="login-form">
+
+    <form action="connect.php" method="post">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email" class="box">
+        <input type="password" placeholder="enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create now</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <span>new arrivals</span>
+                <h3>Bros Bambu</h3>
+                <p>Bros Bambu adalah produk terbaru dari PT. akaaIndonesia dan terbuat dari bahan premium. Dan hanya satu-satu nya PT. akaaIndonesia yang memproduksi bros dari bambu </p>
+                <a href="flexible_chair.html" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/bros bambu.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>new arrivals</span>
+                <h3>Bros Bambu</h3>
+                <p>Bros Bambu adalah produk terbaru dari PT. akaaIndonesia dan terbuat dari bahan premium. Dan hanya satu-satu nya PT. akaaIndonesia yang memproduksi bros dari bambu </p>
+                <a href="flexible_chair.html" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/bros bambu.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="slide-next" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="image/bambu craft/tas.png" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/bambu craft/rantang.png" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 45% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/bambu craft/keranjang.png" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>upto 70% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+    <!--Testimonials------------------->
+    <section id="testimonials">
+        <!--heading--->
+        <div class="testimonial-heading">
+            <span>Comments</span>
+            <h1>Clients Says</h1>
+        </div>
+        <!--testimonials-box-container------>
+        <div class="testimonial-box-container">
+            <!--BOX-1-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="image/mark.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Mark Lee</strong>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><!--Empty star-->
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>aku order disini keren-keren bangettt rapi banget lagii</p>
+                </div>
+            </div>
+            <!--BOX-2-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="image/doyoung.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Kim Doyoung</strong>                            
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><!--Empty star-->
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>Website nya keren, admin fast respon dan ramah, pengiriman cepet, solvingnya juga gercep. Saya ada kendala pas di checkoutnya dan langsung terselesaikan waktu itu juga.
+                        packingnya safety banget. Saya order lampu kap gantung yang ngga seberapa besar, kardusnya pake yang muat 1 orang wkwk. The best dah storenya!
+                    </p>
+                </div>
+            </div>
+            <!--BOX-3-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="image/giselle.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Jisel</strong>                            
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><!--Empty star-->
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>All the products are so freakin aesthetic T_T aesthetic, harga oke, pengiriman cepet,discount and voucher juga tersedia banyak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--blog-section============================================================================-->
+<section id="blog">
+    <!--blog-heading--------------->
+    <div class="blog-heading">
+      <span>Recent Posts</span>
+      <h3>Blog</h3>
+    </div>
+
+
+    <!--container---------------->
+    <div class="blog-container">
+
+      <!--box-1------------->
+      <div class="blog-box">
+
+        <!--img---->
+        <div class="blog-img">
+          <img alt="blog" src="image/keranjang box motif.jpg">
+        </div>
+        <!--text--->
+        <div class="blog-text">
+          <span>12 November 2022</span>
+          <a href="#" class="blog-title">Tas Bambu Buat Bawa Minuman Gak Bakal Tumpah!</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+          <span>Read More</span>
+        </div>
+
+      </div>
+
+
+
+
+      <!--box-2------------->
+      <div class="blog-box">
+
+        <!--img---->
+        <div class="blog-img">
+          <img alt="blog" src="image/rantang bambu 2 susun.jpg">
+        </div>
+        <!--text--->
+        <div class="blog-text">
+          <span>21 November 2022</span>
+          <a href="#" class="blog-title">Tas Bambu Buat Bawa Minuman Gak Bakal Tumpah!</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+          <span>Read More</span>
+        </div>
+
+      </div>
+
+
+
+
+      <!--box-3------------->
+      <div class="blog-box">
+
+        <!--img---->
+        <div class="blog-img">
+          <img alt="blog" src="image/bolpoin.jpg">
+        </div>
+        <!--text--->
+        <div class="blog-text">
+          <span>18 November 2022</span>
+          <a href="#" class="blog-title">Tas Bambu Buat Bawa Minuman Gak Bakal Tumpah!</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+          <span>Read More</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="team.html"> <i class="fas fa-arrow-right"></i> team</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="credit">
+    © Copyright 2020 AkaaIndonesia
+</section>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+    
+</body>
+</html>
